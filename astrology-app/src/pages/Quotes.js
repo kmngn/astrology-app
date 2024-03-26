@@ -1,13 +1,13 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 
-function App() {
+function Quotes() {
   const [data, setData] = useState([]);
 
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await axios.get('http://localhost:8000/daily');
+        const response = await axios.get('http://localhost:8000/quote');
         setData(response.data);
         console.log("success");
       } catch (error) {
@@ -25,4 +25,4 @@ function App() {
   );
 }
 
-export default App;
+export default Quotes;
