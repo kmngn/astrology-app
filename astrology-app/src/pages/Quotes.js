@@ -7,7 +7,7 @@ function Quotes() {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await axios.get('http://localhost:8000/quote');
+        const response = await axios.get('http://localhost:8000/daily');
         setData(response.data);
         console.log("success");
       } catch (error) {
@@ -20,7 +20,7 @@ function Quotes() {
 
   return (
     <div className='quote'>
-      "{data.daily}"
+       "{data.daily}"
     </div>
   );
 }
