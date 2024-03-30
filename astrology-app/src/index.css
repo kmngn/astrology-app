@@ -1,11 +1,14 @@
 body {
   text-align: center;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: chewy;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: #D7BCC7;
+}
+
+.bg-body-tertiary {
+  font-family: chewy;
 }
 
 code {
@@ -15,15 +18,128 @@ code {
 
 
 .quote {
-  font: Playfair Display;
+  font-family: chewy;
   font-style: italic;
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
   min-height: 100vh;
+  color: black;
 }
 
-div#bg{
-  background-color: #D7BCC7;
+div#desc {
+  font-family: chewy;
+  font-size: 17px;
+  font-weight: 1px;
+  width: 800px;
+  text-align: left;
+  color: black;  
+}
+
+div#desc-parent {
+  background: url('/Users/knguyen/astrology-app/astrology-app/src/text-box.png') no-repeat center;
+  background-size: 1400px;
+  text-align: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  width: 900px;
+  height: 600px;
+  gap: 100px;
+}
+
+.sign-blurb {
+  font-family: chewy;
+  text-align: center;
+  color: black;
+  padding-right: 20px;
+}
+
+div#blurb-container {
+  background: url('/Users/knguyen/astrology-app/astrology-app/src/sign-blurb.png') no-repeat center;
+  background-size: 350px;
+  width: 300px;
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+}
+
+div#root {
+  background-color: #EDE6FF;
+  min-height: 100vh;
+  color: white;
+  text-transform: lowercase;
+  justify-content: space-evenly;
+  align-content: space-between;
+  position: relative;
+}
+
+div#cat {
+  font-family: rubik-bubbles;
+  color: white;
+  padding-right: 75px;
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  padding-top: 25px;
+  gap: 30px;
+}
+
+div#sign-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  align-content: space-between;
+  position: relative;
+  min-height: 100vh;
+}
+
+@font-face {
+  font-family: 'rubik-bubbles'; 
+  src: url('/Users/knguyen/astrology-app/astrology-app/src/rubik-bubbles.ttf'); 
+}
+
+@font-face {
+  font-family: 'chewy'; 
+  src: url('/Users/knguyen/astrology-app/astrology-app/src/chewy.ttf'); 
+}
+
+h1#sign {
+  color: white;
+  text-shadow: 0 0 1px black, 0 0 1px black, 0 0 1px black, 0 0 1px black; 
+  font-family: rubik-bubbles;
+  text-align: center;
+}
+
+button {
+  border: none;
+  color: black;
+  background: none;
+}
+
+div#link-container {
+  font-family: chewy;
+  background: url('/Users/knguyen/astrology-app/astrology-app/src/link2signs.png') no-repeat center;
+  background-size: 1350px;
+  height: 700px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: black;
+}
+
+.link {
+  color: black;
+  background: white;
+  text-decoration: none;
+  border-radius: 15%;
+}
+
+div#each-link {
+  padding-bottom: 30px;
+  text-align: center;
 }

@@ -20,7 +20,7 @@ function Quotes() {
 
   return (
     <div className='quote'>
-      ♡ {data.daily}
+      "{data.daily}"
     </div>
   );
 }
