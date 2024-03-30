@@ -7,7 +7,7 @@ function Quotes() {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await axios.get('http://localhost:8000/daily');
+        const response = await axios.get('http://localhost:8000/quote');
         setData(response.data);
         console.log("success");
       } catch (error) {
